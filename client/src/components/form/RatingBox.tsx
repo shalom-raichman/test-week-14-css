@@ -7,7 +7,9 @@ interface Props {
   fildName: MilitaryFormKeys
 }
 
-const RatingBox = ({ rate, setDataFunc, fildName}: Props) => {
+const RatingBox = ({ rate, setDataFunc, fildName }: Props) => {
+  console.log(JSON.stringify(setDataFunc))
+  console.log(JSON.stringify(fildName))
   const [selcted, setSelcted] = useState<boolean>(rate == 1)
   const handelClick = () => {
     setSelcted(!selcted)

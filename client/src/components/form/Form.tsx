@@ -14,8 +14,6 @@ const Form = () => {
   }
   return (
     <div className='form'>
-      <p>{JSON.stringify(data)}</p>
-
       <div className='name-inp-div'>
         <label htmlFor='name'>שם מלא</label>
         <input
