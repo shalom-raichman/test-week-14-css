@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: #f1f0f0;
+  padding: 7px;
+}
+
+.logo {
+  height: 3rem;
+  width: auto;
+}
+
+.icon {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.p-hea {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.p-hea:hover {
+  cursor: pointer;
+  color: #f1f0f0;
+  text-decoration: underline;
+  transition: transform 0.2s ease;
+}
+
+.header {
+  background-color: #675645;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #e1d798;
+}
+
+.entry-point {
+  background-image: url('src/assets/Cannon_fire.jpg');
+  background-size: 100%;
+  background-position: center 64%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.entry-point-h {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1.5px;
+  background: linear-gradient(to bottom, #e1d798, #c4b576);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.entry-point-h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  opacity: 0.9;
+}
+
+.form {
+  padding: 50px;
+  height: auto;
+  width: 60vw;
+  background-color: white;
+  position: relative;
+  top: -15px;
+  border-radius: 15px;
+  margin: auto;
+  color: #4d784e;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #6ea171;
+  border-radius: 6px;
+  resize: vertical;
+  transition: all 0.2s ease;
+  background-color: #6ea1710d;
+}
+
+.name-inp-div {
+  width: 100%;
+  padding: 20px;
+}
+.note-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #6ea171;
+  border-radius: 6px;
+  resize: vertical;
+  transition: all 0.2s ease;
+  background-color: #6ea1710d;
+}
+
+.note-inp-div {
+  width: 100%;
+  padding: 20px;
+}
+
+.instatraction {
+  width: 90%;
+  min-height: 8rem;
+  padding: 1rem;
+  border: 2px solid #90a59275;
+  border-radius: 6px;
+  resize: vertical;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+.instatraction-l {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  border-bottom: 2px solid #90a5923f;
+}
+
+.nonbtto {
+  border: none;
+}
+
+.exam {
+  display: flex;
+  flex-direction: column;
+}
+
+.exam-r {
+  width: 90%;
+}
+
+.chose-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 2px solid #6ea171;
+  background-color: #6ea1711a;
+  color: #4d784e;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.chose-box:hover {
+  background-color: #6ea17133;
+  transform: translateY(-1px);
+}
+
+.selected {
+  background-color: #4d784e;
+  color: #e1d798;
+  border-color: #4d784e;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.manila {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e1d798;
+}
+
+.rating-boxes {
+  display: flex;
+  gap: 10px;
+}
+
+.wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-h {
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4d784e;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(77, 120, 78, 0.2);
+}
+
+.sbt-btn {
+  width: 100%;
+    padding: 1rem;
+    background-color: #4d784e;
+    color: #e1d798;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s ease;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.sbt-btn:hover {
+  background-color: #426b43;
+
+}
