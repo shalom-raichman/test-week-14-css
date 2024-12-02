@@ -1,0 +1,48 @@
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: shalomrauchman/manila-client
+    container_name: manila-client
+    ports:
+      - "8080:80"
+    networks:
+      - manila-network
+    depends_on:
+      - server
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: shalomrauchman/manila-server
+    container_name: manila-server
+    ports:
+      - "3030:3030"
+    networks:
+      - manila-network
+    depends_on:
+      - mongo-db
+    environment:
+      - PORT=${PORT}
+      - DB_URI=${DB_URI}
+  mongo-db:
+    image: mongo
+    build:
+      dockerfile: Dockerfile
+    container_name: manila-db
+    ports:
+      - "3031:27017"
+    networks:
+      - manila-network
+    restart:
+      always
+    volumes:
+      - manila-volume:/data/db
+
+networks:
+  manila-network:
+    driver: bridge
+
+volumes:
+  manila-volume:
